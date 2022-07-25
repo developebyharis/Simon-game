@@ -8,6 +8,7 @@ const heading = document.querySelector('.js-heading');
 const tileContainer = document.querySelector('.js-container');
 
 function resetGame(text) {
+    
   alert(text);
   sequence = [];
   humanSequence = [];
@@ -81,7 +82,7 @@ function handleClick(tile) {
   }
 
   if (humanSequence.length === sequence.length) {
-    if (humanSequence.length === 20) {
+    if (humanSequence.length === 30) {
       resetGame('Congrats! You completed all the levels');
       return
     }
