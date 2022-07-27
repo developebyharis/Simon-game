@@ -56,7 +56,7 @@ function nextRound() {
 
   tileContainer.classList.add('unclickable');
   info.textContent = 'Wait for the computer';
-  heading.textContent = `Level ${level} of 30`;
+  heading.textContent = `Level ${level} of 20`;
 
 
   const nextSequence = [...sequence];
@@ -82,7 +82,7 @@ function handleClick(tile) {
   }
 
   if (humanSequence.length === sequence.length) {
-    if (humanSequence.length === 30) {
+    if (humanSequence.length === 20) {
       resetGame('Congrats! You completed all the levels');
       return
     }
